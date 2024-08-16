@@ -25,14 +25,73 @@ class ViewController: UIViewController {
     @IBOutlet weak var numberDecimal: UIButton!
     
     // MARK: - Operators
-    
-    
-    
+    @IBOutlet weak var operatorAC: UIButton!
+    @IBOutlet weak var operatorPlusMinus: UIButton!
+    @IBOutlet weak var operatorPercent: UIButton!
+    @IBOutlet weak var operatorResult: UIButton!
+    @IBOutlet weak var operatorAdition: UIButton!
+    @IBOutlet weak var operatorSubstraction: UIButton!
+    @IBOutlet weak var operatorMultiplication: UIButton!
+    @IBOutlet weak var operatorDivision: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let allButtons =
+        [   number0, number1, number2, number3, number4, number5, number6, number7, number8, number9, operatorAC, operatorPlusMinus, operatorPercent, operatorResult, operatorAdition, operatorSubstraction, operatorMultiplication, operatorDivision, numberDecimal
+        ]
+        
+        for button in allButtons {
+            button?.round()
+        }
     }
+    
+    //MARK - Button actionss
+    @IBAction func operatorACAAction(_ sender: UIButton) {
+        sender.shine()
+    }
+    
+    @IBAction func operatorPlusMinusAction(_ sender: UIButton) {
+        sender.shine()
+    }
+    
+    @IBAction func operatorPercentAction(_ sender: UIButton) {
+        sender.shine()
+    }
+    
+    @IBAction func operatorResultAction(_ sender: UIButton) {
+        sender.shine()
+    }
+    
+    @IBAction func operatorAditionAction(_ sender: UIButton) {
+        sender.shine()
+    }
+    
+    @IBAction func operatorSubstractionAction(_ sender: UIButton) {
+        sender.shine()
+    }
+    
+    @IBAction func operatorMultiplicationAction(_ sender: UIButton) {
+        sender.shine()
+    }
+    
+    @IBAction func operatorDivisionAction(_ sender: UIButton) {
+        sender.shine()
+    }
+    
+    @IBAction func operatorDecimalAction(_ sender: UIButton) {
+        sender.shine()
+    }
+    
+    @IBAction func numberAction(_ sender: UIButton) {
+        sender.shine()
+        print(sender.tag)
+    }
+    
+    
+    
+    
+    
 
 
 }
